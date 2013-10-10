@@ -28,7 +28,9 @@ class ZipstreamServiceProvider extends ServiceProvider {
 	 */
 	public function register()
 	{
-		//
+		$this->app['zipstream'] = $this->app->share(function ($app) {
+			return new ZipStream();
+		});
 	}
 
 	/**
@@ -38,7 +40,7 @@ class ZipstreamServiceProvider extends ServiceProvider {
 	 */
 	public function provides()
 	{
-		return array();
+		return array('zipstream');
 	}
 
 }
