@@ -16,5 +16,5 @@
             "Abishekrsrikaanth\\Zipstream": "src/"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "stable"
 }
